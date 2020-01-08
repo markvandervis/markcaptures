@@ -1,0 +1,226 @@
+/*FONT SECTION*/
+/*FONT SECTION*/
+/*FONT SECTION*/
+@font-face {
+  src: url(../fonts/MARKCAPTURES-BLACK.ttf);
+  font-family: MARKCAPTURES;
+  font-weight: 900;
+}
+
+@font-face {
+  src: url(../fonts/MARKCAPTURES-EXTRABOLD.ttf);
+  font-family: MARKCAPTURES;
+  font-weight: 800;
+}
+
+@font-face {
+  src: url(../fonts/MARKCAPTURES-BOLD.ttf);
+  font-family: MARKCAPTURES;
+  font-weight: 700;
+}
+
+@font-face {
+  src: url(../fonts/MARKCAPTURES-SEMIBOLD.ttf);
+  font-family: MARKCAPTURES;
+  font-weight: 600;
+}
+
+@font-face {
+  src: url(../fonts/MARKCAPTURES-MEDIUM.ttf);
+  font-family: MARKCAPTURES;
+  font-weight: 500;
+}
+
+@font-face {
+  src: url(../fonts/MARKCAPTURES-REGULAR.ttf);
+  font-family: MARKCAPTURES;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url(../fonts/MARKCAPTURES-LIGHT.ttf);
+  font-family: MARKCAPTURES;
+  font-weight: 300;
+}
+
+@font-face {
+  src: url(../fonts/MARKCAPTURES-EXTRALIGHT.ttf);
+  font-family: MARKCAPTURES;
+  font-weight: 200;
+}
+
+@font-face {
+  src: url(../fonts/MARKCAPTURES-THIN.ttf);
+  font-family: MARKCAPTURES;
+  font-weight: 100;
+}
+
+
+
+/*GENERAL SECTION*/
+/*GENERAL SECTION*/
+/*GENERAL SECTION*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body{
+  font-family: 'MARKCAPTURES';
+  font-size: 1em;
+  line-height: 1;
+  height: 100%;
+  color: black;
+}
+
+.mobile-only {
+    display: none !important;
+}
+
+.desktop-only {
+    display: none !important;
+}
+
+a, a:link, a:visited {
+    outline: 0;
+    border: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+img{
+  display: block;
+}
+
+video{
+  display: block;
+}
+
+h1,h2,h3{
+  text-transform: uppercase;
+}
+
+.fade{
+  opacity: 0;
+  animation: fadeIn 1.0s ease forwards;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fade-in{
+  opacity: 0;
+  transition: opacity 650ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+        	0% { }
+        	100% { opacity: 1; }
+        }
+
+/* THE HEADER */
+/* THE HEADER */
+/* THE HEADER */
+
+
+
+header{
+  z-index: 999;
+  height: 70px;
+  width: 100vw;
+  background-color: white;
+  position: fixed;
+  top: 0;
+}
+
+header ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+}
+
+header ul li{
+  border-bottom: 2px solid white;
+  transition:all 0.4s ease;
+}
+header ul li:hover{
+  border-bottom: 2px solid grey;
+}
+
+header ul li a{
+  display: block;
+  padding: 1em 1em 0.5em 1em;
+  width: 6em;
+  text-align: center;
+}
+
+header ul li a:hover{
+  color: grey;
+}
+
+.main-container{
+  padding: 70px 4vw 1.38vw 4vw;
+  display: flex;
+}
+
+.container{
+  position: absolute;
+  bottom: 1rem;
+  left: -1px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+aside{
+  position: relative;
+  width: 30vw;
+}
+
+aside img{
+  width: 100%;
+}
+
+aside h1{
+  font-size: 2.4vw;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+  background-color: white;
+  padding: 5px 12px 8px 12px;
+}
+
+aside h2{
+  font-size: 1.4vw;
+  font-weight: 600;
+  color: grey;
+  background-color: white;
+  padding: 5px 12px 6px 12px;
+}
+
+article{
+  width: 30vw;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
