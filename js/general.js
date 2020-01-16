@@ -1,3 +1,20 @@
+// FORM SECTION https://www.youtube.com/watch?v=GcPi65geFlo&t=854s
+
+document.addEventListener('DOMContentLoaded', function(){
+  document.querySelectorAll('.form_input_text').forEach(function (input) {
+    input.addEventListener('input', function(){
+      input.className = input.className.replace(/form_input_error ?/, '');
+    })
+  });
+});
+
+
+
+
+
+
+// HAMBURGER MENU
+
 const menuIcon = document.querySelector(".hamburger-menu");
 
 const mobile = document.querySelector(".header-container");
@@ -13,9 +30,7 @@ menuIcon.addEventListener("click", () => {
 });
 
 
-
-
-
+// STICKY HEADER WITH JAVASCRIPT
 
 window.onscroll = function() {
   stickOnScroll()
@@ -60,4 +75,13 @@ appearOptions);
 
 faders.forEach(fader => {
   appearOnScroll.observe(fader);
+});
+
+
+// SPINNING LOGO
+
+var rotate = document.getElementById("rotating");
+
+window.addEventListener("scroll", function() {
+    rotate.style.transform = "rotate("+window.pageYOffset+"deg)";
 });
